@@ -7,23 +7,37 @@ class App extends Component {
             {
                 firstName:"",
                 secondName:""
-            }
-        );
+            });
+          const [relation,setRelation] = useState("")
+        
+        function checkRelation(){
+          setRelation("sd");
+          let retionsArr = ["Friends","Love","Affection","Marriage","Enemy","Siblings"]
+          let name1 = name.firstName;
+          let name2 = name.secondName;
+          console.log(name1,name2)
+          let str = '';
+          
+        }
         return(
             <div id="main">
                {/* Do not remove the main div */}
-               <input 
-                    placeholder="Enter your first name"
-                    value={name.firstName}
-                    onChange={(e)=>setName({...name,firstName:e.target.value})}
-                />
-               <input 
-                    placeholder="Enter your first name"
-                    value={name.secondName}
-                    onChange={(e)=>setName({...name,secondName:e.target.value})}
-                />
-               <button>Calculate Relationship Future</button>
-               <button>Cleat</button>
+                 const [name,setName] = useState(
+    {
+        firstName:"",
+        secondName:""
+    });
+  const [relation,setRelation] = useState("")
+
+function checkRelation(){
+  setRelation("sd");
+  let retionsArr = ["Friends","Love","Affection","Marriage","Enemy","Siblings"]
+  let name1 = name.firstName;
+  let name2 = name.secondName;
+  console.log(name1,name2)
+  let str = '';
+  
+}
             </div>
         )
     }
